@@ -1,0 +1,16 @@
+# ==============================================================================
+# สรุปชุดคำสั่งเทรนตัวตรวจจับแผ่นยา (Kirby-Bauer Disc Detection)
+# รันผ่านสคริปต์: training/train_disc_detector.py
+# รองรับ CachyOS + AMD Radeon RX 9070 XT (ROCm 7.2)
+# ==============================================================================
+
+# [คำสั่งเดี่ยว] สั่งเทรนเฉพาะ YOLOv10s (NMS-Free, Epochs 300, Early Stopping 50, LR ต่ำ 0.0003)
+python training/train_disc_detector.py --data dataset/data.yaml --model yolov10s.pt --epochs 300 --batch 16 --imgsz 512 --lr0 0.0003 --patience 50
+
+# ------------------------------------------------------------------------------
+# [คำสั่งชุดรวดเดียว] สั่งเทรนต่อเนื่องครบทั้ง 4 โมเดล (Nano -> No-Aug -> Champion -> YOLOv10s)
+# ------------------------------------------------------------------------------
+python training/train_disc_detector.py --data dataset/data.yaml --model yolo26n.pt --epochs 200 --batch 16 --imgsz 512 --lr0 0.001 && \
+python training/train_disc_detector.py --data dataset/data.yaml --model yolo26s.pt --epochs 200 --batch 16 --imgsz 512 --lr0 0.001 --no-aug && \
+python training/train_disc_detector.py --data dataset/data.yaml --model yolo26s.pt --epochs 250 --batch 16 --imgsz 512 --lr0 0.0008 --patience 80 && \
+python training/train_disc_detector.py --data dataset/data.yaml --model yolov10s.pt --epochs 300 --batch 16 --imgsz 512 --lr0 0.0003 --patience 50

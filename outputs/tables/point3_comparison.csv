@@ -1,0 +1,5 @@
+Model,Architecture,Tested Discs,Open-Set Accuracy (%),Plate-Matched Accuracy (%),Macro Precision (%),Macro Recall (%),Macro F1-Score (%),Latency (ms/disc)
+1. EasyOCR Baseline (0° Single-Pass),CRAFT + BiLSTM (No Rotation Sweep),280,33.9,33.9,98.0,33.9,47.4,86.77
+2. EasyOCR Standard (4-Angle Ab.ai 2022),4-Way Rotation CRAFT + ResNet-BiLSTM,280,76.1,76.1,87.5,76.1,80.6,157.94
+3. EasyOCR Super-Res (Underline + 8-Angle),Underline Alignment + 8-Way CRAFT-BiLSTM,280,55.0,63.9,74.3,63.9,65.3,299.52
+4. Proposed Hybrid AST-OCR (Underline + Fingerprint + Hungarian),Underline Bar + Clinical Fingerprint + Hungarian,280,55.0,100.0,100.0,100.0,100.0,304.24

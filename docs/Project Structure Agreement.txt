@@ -1,0 +1,21 @@
+ATSProject/
+├── weights/                      # เก็บไฟล์น้ำหนักโมเดลหลังเทรนเสร็จ
+│   ├── best_disc_yolo.pt         # โมเดลตรวจจับเม็ดยา
+│   └── best_classifier.pt        # โมเดลจำแนกชื่อยา (กรณีใช้ CNN)
+├── configs/                      # ค่าตั้งค่าและเกณฑ์ทางการแพทย์
+│   └── clsi_m100.json            # ฐานข้อมูลเกณฑ์ S / I / R
+│
+├── training/                     # [ฝั่งเทรนโมเดล] แยกไว้ชัดเจน
+│   ├── train_disc_yolo.py        # รันเทรน YOLO สำหรับจุดที่ 1 (ตรวจจับเม็ดยา)
+│   └── train_classifier.py       # รันเทรน CNN สำหรับจุดที่ 3 (จำแนกชื่อยา)
+│
+├── src/                          # [ฝั่งประมวลผลจริง] ตรงกับ 3 โมดูลหลัก
+│   ├── schemas.py                # [Step 1] สัญญาข้อมูล Pydantic (เสร็จแล้ว)
+│   ├── detectors.py              # [Step 2 - โมดูล 1] Hough Baseline & YOLO
+│   ├── measurements.py           # [Step 2 - โมดูล 2] Radial Profile (Derivative & K-Means)
+│   ├── classifiers.py            # [Step 2 - โมดูล 3] อ่านชื่อยาด้วย EasyOCR / CNN
+│   ├── clsi_lookup.py            # [Step 2 - โมดูล 4] ฐานข้อมูลแปลผล CLSI
+│   └── pipeline.py               # [Step 4] ตัวเชื่อม 4 โมดูลร้อยเรียงเข้าด้วยกัน
+│
+├── main.py                       # [Step 5] จุดรันโปรแกรมหลัก
+└── requirements.txt

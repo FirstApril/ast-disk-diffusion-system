@@ -1,0 +1,5 @@
+﻿อัลกอริทึมวัดขอบเขตวงใส (จุดที่ 2),Inference (ms),MAE (mm),RMSE (mm),SD (mm),Accuracy (±2mm),Pearson r
+2D Otsu & Contour (Bhargav 2016),3.25,3.4,6.53,5.58,63.9%,0.757
+1D Radial Profile Inflection (Hejblum 1993),3.66,2.18,5.02,4.52,80.7%,0.852
+1D K-Means Clustering (Gullu 2024),3.31,2.02,4.54,4.06,77.6%,0.876
+Continuous Warp Polar Transform (SOTA),6.27,1.31,3.27,3.0,88.0%,0.939

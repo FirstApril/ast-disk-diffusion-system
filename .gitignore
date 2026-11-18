@@ -1,0 +1,22 @@
+cat << 'EOF' > .gitignore
+# Python & Cache
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ข้อมูลอัลบั้มชั่วคราวและผลรันการเทรนขนาดใหญ่
+outputs/uploaded_album/
+runs/
+
+# Flutter / Android Build Artifacts
+ast_flutter_app/build/
+ast_flutter_app/.dart_tool/
+ast_flutter_app/.flutter-plugins*
+*.apk
+
+# Model Weights (Ignored to prevent GitHub size limit errors)
+weights/
+*.pt
+*.onnx
+EOF

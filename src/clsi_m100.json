@@ -1,0 +1,42 @@
+{
+  "Enterobacterales": {
+    "AMP10": { "name": "Ampicillin (10 mcg)", "resistant_max": 13, "intermediate_range": [14, 16], "susceptible_min": 17 },
+    "CTX5":  { "name": "Cefotaxime (5 mcg)", "resistant_max": 22, "intermediate_range": [23, 25], "susceptible_min": 26 },
+    "CRO30": { "name": "Ceftriaxone (30 mcg)", "resistant_max": 19, "intermediate_range": [20, 22], "susceptible_min": 23 },
+    "CAZ10": { "name": "Ceftazidime (10 mcg)", "resistant_max": 17, "intermediate_range": [18, 20], "susceptible_min": 21 },
+    "FEP30": { "name": "Cefepime (30 mcg)", "resistant_max": 18, "intermediate_range": [19, 24], "susceptible_min": 25 },
+    "FOX30": { "name": "Cefoxitin (30 mcg)", "resistant_max": 14, "intermediate_range": [15, 17], "susceptible_min": 18 },
+    "CIP5":  { "name": "Ciprofloxacin (5 mcg)", "resistant_max": 15, "intermediate_range": [16, 20], "susceptible_min": 21 },
+    "MEM10": { "name": "Meropenem (10 mcg)", "resistant_max": 19, "intermediate_range": [20, 22], "susceptible_min": 23 },
+    "IPM10": { "name": "Imipenem (10 mcg)", "resistant_max": 19, "intermediate_range": [20, 22], "susceptible_min": 23 },
+    "ETP10": { "name": "Ertapenem (10 mcg)", "resistant_max": 18, "intermediate_range": [19, 21], "susceptible_min": 22 },
+    "AK30":  { "name": "Amikacin (30 mcg)", "resistant_max": 14, "intermediate_range": [15, 16], "susceptible_min": 17 },
+    "CN10":  { "name": "Gentamicin (10 mcg)", "resistant_max": 12, "intermediate_range": [13, 14], "susceptible_min": 15 },
+    "TOB10": { "name": "Tobramycin (10 mcg)", "resistant_max": 12, "intermediate_range": [13, 14], "susceptible_min": 15 },
+    "TC75":  { "name": "Tetracycline (30 mcg)", "resistant_max": 14, "intermediate_range": [15, 18], "susceptible_min": 19 },
+    "SXT25": { "name": "Trimethoprim-Sulfamethoxazole", "resistant_max": 10, "intermediate_range": [11, 15], "susceptible_min": 16 },
+    "ATM30": { "name": "Aztreonam (30 mcg)", "resistant_max": 17, "intermediate_range": [18, 20], "susceptible_min": 21 },
+    "TZP36": { "name": "Piperacillin-Tazobactam (36 mcg)", "resistant_max": 17, "intermediate_range": [18, 20], "susceptible_min": 21 }
+  },
+  "Pseudomonas aeruginosa": {
+    "CAZ10": { "name": "Ceftazidime (10 mcg)", "resistant_max": 14, "intermediate_range": [15, 17], "susceptible_min": 18 },
+    "FEP30": { "name": "Cefepime (30 mcg)", "resistant_max": 14, "intermediate_range": [15, 17], "susceptible_min": 18 },
+    "CIP5":  { "name": "Ciprofloxacin (5 mcg)", "resistant_max": 15, "intermediate_range": [16, 20], "susceptible_min": 21 },
+    "AK30":  { "name": "Amikacin (30 mcg)", "resistant_max": 14, "intermediate_range": [15, 16], "susceptible_min": 17 },
+    "CN10":  { "name": "Gentamicin (10 mcg)", "resistant_max": 12, "intermediate_range": [13, 14], "susceptible_min": 15 },
+    "TOB10": { "name": "Tobramycin (10 mcg)", "resistant_max": 12, "intermediate_range": [13, 14], "susceptible_min": 15 },
+    "MEM10": { "name": "Meropenem (10 mcg)", "resistant_max": 15, "intermediate_range": [16, 18], "susceptible_min": 19 },
+    "IPM10": { "name": "Imipenem (10 mcg)", "resistant_max": 15, "intermediate_range": [16, 18], "susceptible_min": 19 },
+    "PB300": { "name": "Polymyxin B (300 units)", "resistant_max": 11, "intermediate_range": null, "susceptible_min": 12 }
+  },
+  "Staphylococcus aureus": {
+    "FOX30": { "name": "Cefoxitin (30 mcg / MRSA Screen)", "resistant_max": 21, "intermediate_range": null, "susceptible_min": 22 },
+    "CIP5":  { "name": "Ciprofloxacin (5 mcg)", "resistant_max": 15, "intermediate_range": [16, 20], "susceptible_min": 21 },
+    "VA5":   { "name": "Vancomycin (5 mcg)", "resistant_max": 14, "intermediate_range": null, "susceptible_min": 15 },
+    "E15":   { "name": "Erythromycin (15 mcg)", "resistant_max": 13, "intermediate_range": [14, 22], "susceptible_min": 23 },
+    "CD2":   { "name": "Clindamycin (2 mcg)", "resistant_max": 14, "intermediate_range": [15, 20], "susceptible_min": 21 },
+    "P1":    { "name": "Penicillin G (10 units)", "resistant_max": 28, "intermediate_range": null, "susceptible_min": 29 },
+    "SXT25": { "name": "Trimethoprim-Sulfamethoxazole", "resistant_max": 10, "intermediate_range": [11, 15], "susceptible_min": 16 },
+    "TC75":  { "name": "Tetracycline (30 mcg)", "resistant_max": 14, "intermediate_range": [15, 18], "susceptible_min": 19 }
+  }
+}

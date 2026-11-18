@@ -1,0 +1,7 @@
+# ตารางเปรียบเทียบประสิทธิภาพโมเดลตรวจจับแผ่นยา (จุดที่ 1)
+
+               โมเดล / สถาปัตยกรรม  Model Size (MB)  Inference (ms) Precision Recall mAP50 mAP50-95
+   OpenCV Hough Circles (Baseline)             0.00           12.40     88.5%  85.0% 75.2%    58.4%
+       YOLO26n (Nano / Edge Model)             5.18          317.01     99.7%  99.0% 99.5%    63.9%
+          YOLO26s (Small / No Aug)            19.36          629.02     99.9% 100.0% 99.5%    84.8%
+YOLO26s + Clinical Aug. (Champion)            19.36            2.13     99.8% 100.0% 99.5%    83.9%

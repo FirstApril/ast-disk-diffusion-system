@@ -1,0 +1,35 @@
+# ==============================================================================
+# Requirements for Antibiotic Disc Detection & Antibiogram Analysis Project
+# OS: CachyOS (Arch Linux) | Hardware: Core i5-14400F | RAM: 32GB
+# GPU: AMD Radeon RX 9070 XT (16GB VRAM) via AMD ROCm
+# ==============================================================================
+# IMPORTANT: For AMD GPU acceleration, install PyTorch with ROCm wheel FIRST:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.2
+
+# --- Core Deep Learning & Object Detection (YOLOv8 / YOLOv9 / YOLOv11) ---
+ultralytics>=8.3.0
+
+# --- Computer Vision & Image Processing ---
+opencv-python>=4.10.0
+Pillow>=10.4.0
+
+# --- Scientific Computing & Mathematical Modeling ---
+numpy>=1.26.0,<2.2.0
+scipy>=1.13.0
+pandas>=2.2.0
+scikit-learn>=1.5.0
+openpyxl>=3.1.2
+
+# --- Segmentation & Model Backbones (Swin U-Net / ViT / ResNet) ---
+timm>=1.0.9
+albumentations>=1.4.15
+einops>=0.8.0
+
+# --- Visualization & Progress Tracking ---
+matplotlib>=3.9.0
+seaborn>=0.13.0
+tqdm>=4.66.0
+PyYAML>=6.0.2
+
+# --- Text Recognition / OCR (Disc Label Identification) ---
+easyocr>=1.7.1

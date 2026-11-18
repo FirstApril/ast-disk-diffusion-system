@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['disc']
+
+roboflow:
+  workspace: 146s-workspace
+  project: disc-9pyde
+  version: 1
+  license: Private
+  url: https://app.roboflow.com/146s-workspace/disc-9pyde/1

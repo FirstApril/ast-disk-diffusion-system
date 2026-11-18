@@ -1,0 +1,27 @@
+name: ast_flutter_app
+description: Antimicrobial Susceptibility Testing (AST) 100% On-Device ML System (CLSI M100 / EUCAST)
+publish_to: 'none'
+version: 2.3.0+5
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  image: ^4.1.7
+  image_picker: ^1.0.7
+  google_mlkit_text_recognition: ^0.13.0
+  path_provider: ^2.1.3
+  http: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/
